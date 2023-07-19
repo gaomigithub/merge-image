@@ -28,14 +28,6 @@ export const ResultPage = memo((props: any) => {
 
   const arrImgs = useCallback(() => {
     let totalHeight = 0
-    // fileList.map((item, idx) => {
-    //   if (idx === fileList.length - 1) {
-    //     totalHeight = fileList.reduce((accumulator, obj) => {
-    //       return accumulator + (obj?.height ?? 0)
-    //     }, 0)
-    //     setResImgHeight(totalHeight)
-    //   }
-    // })
 
     const _arr = fileList.reduce(
       (
@@ -86,7 +78,7 @@ export const ResultPage = memo((props: any) => {
       }[]
     ) => {
       const res = await mergeImages(imgs, {
-        format: 'image/jpg',
+        format: 'image/jpeg',
         quality: 1,
         height: resImgHeight,
       })
@@ -105,9 +97,8 @@ export const ResultPage = memo((props: any) => {
 
   useEffect(() => {
     const { arr } = arrImgs()
-    console.log(1111111, resImgHeight)
     initResImage(arr)
-  }, [arrImgs, initResImage, resImgHeight])
+  }, [arrImgs, initResImage])
 
   return (
     <div

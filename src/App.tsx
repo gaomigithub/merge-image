@@ -19,7 +19,23 @@ function App() {
           flex-direction: column;
         `}
       >
-        <h1>郭郭专用拼图小工具 Ver1.0</h1>
+        <h1
+          css={css`
+            margin-bottom: 0;
+            color: #f7ed68;
+            text-shadow: 3px 3px #ccc, -2px -2px #ccc, 0 0 10px #fff;
+          `}
+        >
+          郭奕杉专享拼图小工具
+        </h1>
+        <h6
+          css={css`
+            font-size: 14px;
+            margin-top: 0;
+          `}
+        >
+          Version 1.1, updated on 2023/07/20
+        </h6>
         {showRes === false ? <PictureUploader /> : <ResultPage />}
       </div>
     </div>
