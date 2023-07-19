@@ -1,15 +1,21 @@
 {
   "files": {
     "main.css": "./static/css/main.c8c1bc11.css",
-    "main.js": "./static/js/main.da4fec4b.js",
+    "main.js": "./static/js/main.c12f5cf9.js",
     "static/js/787.7ea0eb83.chunk.js": "./static/js/787.7ea0eb83.chunk.js",
+    "../config/build/public/cheerup.png": "./../config/build/public/cheerup.png",
+    "../config/build/public/logo512.png": "./../config/build/public/logo512.png",
+    "../config/build/public/logo192.png": "./../config/build/public/logo192.png",
+    "../config/build/public/favicon.ico": "./../config/build/public/favicon.ico",
     "index.html": "./index.html",
+    "../config/build/public/manifest.json": "./../config/build/public/manifest.json",
+    "../config/build/public/robots.txt": "./../config/build/public/robots.txt",
     "main.c8c1bc11.css.map": "./static/css/main.c8c1bc11.css.map",
-    "main.da4fec4b.js.map": "./static/js/main.da4fec4b.js.map",
+    "main.c12f5cf9.js.map": "./static/js/main.c12f5cf9.js.map",
     "787.7ea0eb83.chunk.js.map": "./static/js/787.7ea0eb83.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8c1bc11.css",
-    "static/js/main.da4fec4b.js"
+    "static/js/main.c12f5cf9.js"
   ]
 }

@@ -338,7 +338,10 @@ const PictureUploader = memo(() => {
       >
         {resImgPath.length > 1 && (
           <Fragment>
-            <img src="/cheerup.png" alt="congratulations" />
+            <img
+              src={`${process.env.PUBLIC_URL}/cheerup.png`}
+              alt="congratulations"
+            />
             <h2
               css={css`
                 margin: 20px;
