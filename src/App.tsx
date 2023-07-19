@@ -3,8 +3,12 @@ import { css } from '@emotion/react'
 import React from 'react'
 import './App.css'
 import PictureUploader from './components/PictureUploader'
+import { ResultPage } from './components/ResultPage'
+import useLayoutUiStore from './store/layoutUiStore'
 
 function App() {
+  // useLayoutUiStore
+  const showRes = useLayoutUiStore((state) => state.showRes)
   return (
     <div className="App">
       <div
@@ -15,7 +19,8 @@ function App() {
           flex-direction: column;
         `}
       >
-        <PictureUploader />
+        <h1>郭郭专用拼图小工具 Ver1.0</h1>
+        {showRes === false ? <PictureUploader /> : <ResultPage />}
       </div>
     </div>
   )
